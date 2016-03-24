@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+
+{% for cereal in cereal_list %}
+
+<h1>{{ cereal.name }}   <a href='/cerealedit/{{ cereal.pk }}'>EDIT </a><a href='/cerealdelete/{{ cereal.pk }}'>|  DELETE</a>></h1> <h5>by {{ cereal.manufacturer }}</h5><br>
+
+{% endfor %}
+
+
+
+{% endblock %}

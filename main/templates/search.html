@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<form method='POST' action='/cerealsearch/'>
+
+{% csrf_token %}
+
+{{ form.as_p }}
+
+<input type='submit' value='SEARCH'>
+
+</form>
+
+
+{% endblock %}
